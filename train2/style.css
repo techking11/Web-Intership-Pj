@@ -1,0 +1,44 @@
+body{
+    margin: 0px;
+    
+}
+header{
+    /* background-color: #00203fff; */
+    background: linear-gradient(to right, #00203fff 50%, #ADEFD1FF 50%);
+    /* color: #ADEFD1FF; */
+    
+   
+    
+    padding:4px;
+}
+.lftnav{
+    transform: skew(-15deg);
+    background-color: #00203fff;
+    padding-left: 0px;
+    color: #ADEFD1FF;
+}
+.rgtnav{
+    transform: skew(-15deg);
+    background-color:#ADEFD1FF ;
+    padding: 0px;
+}
+select{
+    background-color:#00203fff ;
+}
+/* option,select, a{
+    color: #ADEFD1FF;
+    
+} */
+a{
+    text-decoration: none;
+    color: #00203fff;
+    transition: color 0.1s ease-in-out;
+    font-size: 20px;
+}
+a:hover{
+    color: rebeccapurple;
+}
+footer{
+    background-color:#00203fff ;
+    color: #ADEFD1FF;
+}
