@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi dom</title>
+</head>
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="brand-logo">
+                <h1>Brand Logo</h1>
+            </div>
+            <div class="brand-title">
+                <h1>Brand Name</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let bdy = document.querySelector('body');
+    let con = document.querySelector('.container');
+    let topbar = document.querySelector('.topbar');
+    let brandLogo = document.querySelector('.brand-logo');
+    let brandTitle = document.querySelector('.brand-title');
+
+    bdy.style.backgroundColor = 'wheat';
+
+    bdy.style.cssText = `cursor: pointer;`;
+
+    con.style.cssText = `
+        width: 100%;
+        height: 100px;
+        color: white;
+        animation : sim 0.3s infinite;
+    ` ;
+
+    topbar.style.cssText = `
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        margin: 10px 0px;
+    `;
+    brandLogo.addEventListener('mouseleave', () => {
+        hover(brandLogo, 'orange')
+    });
+    brandLogo.addEventListener('mouseover', _ => {
+        hover(brandLogo, 'blue')
+    });
+    brandTitle.addEventListener('mouseleave', () => {
+        hover(brandTitle, 'orange')
+    });
+    brandTitle.addEventListener('mouseover', _ => {
+        hover(brandTitle, 'blue')
+    });
+
+
+    let hover = (content, color) => {
+        content.style.cssText = `
+            width: 50%;
+            margin: 10px;
+            border-radius: 50px;
+            text-align: center;
+            cusor: pointer;
+            background-color: ${color};
+            box-shadow: 5px 5px gray;
+        `;
+    }
+    
+    hover(brandLogo, 'orange');
+    hover(brandTitle, 'orange')
+
+    for(var i = 1000; i <= 10000; i+1000) {
+        console.log(i);
+    }
+
+
+    // window.addEventListener('load', () => {
+        
+    // })
+
+
+</script>
