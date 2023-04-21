@@ -3,27 +3,113 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+
 .mainContainer {
-    background-color: lightgray;
-    margin: 0 auto;
     width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+}
+
+.container {
+    /* height: 500px; */
+}
+
+.header {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #266edb;
+    font-weight: 600;
+}
+
+.Departs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.containerOne {
-    background-color: blue;
-    width: 100%;
-    height: 50%;
+.card {
+    margin: 0 auto;
+    width: 310px;
+    padding: 1rem;
+    overflow: hidden;
+    box-shadow: 3px 2px 14px hsla(0,0%,100%,.2);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .2s ease-in-out;
 }
 
-.containerTwo {
-    background-color: purple;
-    width: 100%;
-    height:50%;
+.card:hover {
+    transform: translateY(-1rem);
+    box-shadow: 2px 3px 18px hsla(0,0%,100%,.4);
+}
+.card-image {
+    max-width: 100%;
+    height: 302px;
+    object-fit: fill;
 }
 
+/* .card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-top: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+} */
+
+.card__content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: #fafafa;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+
+.span {
+    color: white !important;
+}
+
+/* .card-label {
+    background-color: #4088f3;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    transition: all .4s linear;
+    width: 250px;
+    padding: 3rem;
+} */
+
+.text-center {
+    color: #266edb;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.div-seperater {
+    margin-top: 60px;
+    border-top-color: #266edb;
+    border-top-width: 2px;
+    border-top-style: solid;
+}
